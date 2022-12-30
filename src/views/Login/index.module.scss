@@ -1,0 +1,36 @@
+.loginPage{
+  position: relative;
+  .loginBox{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    .title{
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    [class*='ant-input']{
+      background: rgba(255,255,255,0);
+      border-color: #1677ff;
+      color: #fff;
+    }
+    [class*='ant-input']::placeholder{
+      color: #ccc;
+    }
+    [class*='ant-input-password-icon'], [class*='ant-input-password-icon']:hover{
+      color: #1677ff;
+    }
+    .captchaBox{
+      display: flex;
+      .captchaImg{
+        height: 30px;
+        padding-left: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
